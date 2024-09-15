@@ -1,12 +1,12 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-	"type": "module",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/DenisBrez/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DenisBrez/frontend-project-44/actions)",
   "main": "index.js",
-	"bin": {
-  "brain-games": "bin/brain-games.js"
-	},
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,20 @@
   "bugs": {
     "url": "https://github.com/DenisBrez/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/DenisBrez/frontend-project-44#readme"
+  "homepage": "https://github.com/DenisBrez/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.0.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.10.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^15.9.0"
+  }
 }
