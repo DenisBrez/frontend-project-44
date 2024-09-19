@@ -7,3 +7,6 @@ https://asciinema.org/a/ERPuOUYqM1Z8Qq3jssQlhbdNA
 
 // Аскинема игры калькулятор.
 https://asciinema.org/a/s2UkyuDOfQKQxU3NUtUnq53am
+
+// Аскинема игры НОД.
+https://asciinema.org/a/qCHwONSsZwXp0GcMiezoHHdAG
