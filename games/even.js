@@ -8,7 +8,7 @@ const userAdd = readlineSync.question(
 // определение функци приветствия
 const userName = userAdd;
 export const greeting = () => {
-  console.log("Hi " + userName + "!");
+  console.log("Hi, " + userName + "!");
 };
 
 //определение функции случайного числа

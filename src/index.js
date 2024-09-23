@@ -8,7 +8,7 @@ const game = (essenseGame, task) => {
   // определение функци приветствия
   const userName = userAdd;
 
-  console.log("Hello " + userName + "!");
+  console.log("Hello, " + userName + "!");
 
   //определение функции случайного числа
   const randomNum = (max) => Math.floor(Math.random() * max);
