@@ -10,3 +10,9 @@ https://asciinema.org/a/s2UkyuDOfQKQxU3NUtUnq53am
 
 // Аскинема игры НОД.
 https://asciinema.org/a/qCHwONSsZwXp0GcMiezoHHdAG
+
+// Аскинема игры Геометрическая прогрессия
+https://asciinema.org/a/evVyWuftBgZ5BYQCscnyeqYg9
+
+// Аскинема игры Простое ли число?
+https://asciinema.org/a/RAE5bOR03WkNPU34k4e5djVOA
