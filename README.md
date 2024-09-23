@@ -2,18 +2,9 @@
 
 [![Actions Status](https://github.com/DenisBrez/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DenisBrez/frontend-project-44/actions)
 
-Игры Разума (Java Script)
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
-Игры:
-
-Определение четного числа.
-Определение простого числа.
-Калькулятор. Арифметические выражения, которые необходимо вычислить.
-Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-Определение наибольшего общего делителя.
-
-Установка
+Установка:
 $ sudo npm link
 
 Игра: "Проверка на четность"
@@ -21,6 +12,7 @@ $ sudo npm link
 
 Запуск игры
 $ brain-even
+
 Пример игры
 https://asciinema.org/a/ERPuOUYqM1Z8Qq3jssQlhbdNA
 
@@ -29,6 +21,7 @@ https://asciinema.org/a/ERPuOUYqM1Z8Qq3jssQlhbdNA
 
 Запуск игры
 $ brain-calc
+
 Пример игры
 https://asciinema.org/a/s2UkyuDOfQKQxU3NUtUnq53am
 
@@ -37,6 +30,7 @@ https://asciinema.org/a/s2UkyuDOfQKQxU3NUtUnq53am
 
 Запуск игры
 $ brain-gcd
+
 Пример игры
 https://asciinema.org/a/qCHwONSsZwXp0GcMiezoHHdAG
 
@@ -45,6 +39,7 @@ https://asciinema.org/a/qCHwONSsZwXp0GcMiezoHHdAG
 
 Запуск игры
 $ brain-progression
+
 Пример игры
 https://asciinema.org/a/evVyWuftBgZ5BYQCscnyeqYg9
 
@@ -53,5 +48,6 @@ https://asciinema.org/a/evVyWuftBgZ5BYQCscnyeqYg9
 
 Запуск игры
 $ brain-prime
+
 Пример игры
 https://asciinema.org/a/RAE5bOR03WkNPU34k4e5djVOA
