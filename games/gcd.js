@@ -1,7 +1,8 @@
 import game from "../src/index.js";
 import randomNum from "../src/getRandomInt.js";
 const gcd = () => {
-  const nameGame = "Find the greatest common divisor of given numbers.";
+  const nameGame =
+    'Answer "yes" if given number is prime. Otherwise answer "no".';
   const taskGcd = () => {
     const num1 = randomNum(30);
     const num2 = randomNum(50);
