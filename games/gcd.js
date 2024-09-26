@@ -19,7 +19,7 @@ const gcd = () => {
         }
       }
     };
-    return [question, gameGcd().toString()];
+    return [question, String(gameGcd())];
   };
   game(nameGame, taskGcd);
 };
