@@ -25,7 +25,7 @@ const calc = () => {
       default:
         result = null;
     }
-    return [question, result.toString()];
+    return [question, String(result)];
   };
   game(nameGame, taskCalc);
 };
