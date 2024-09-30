@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 import readlineSync from "readline-sync";
+
 const game = (essenseGame, task) => {
   // определеие функции запроса имени
   const userAdd = readlineSync.question(
@@ -8,12 +10,15 @@ const game = (essenseGame, task) => {
   // определение функци приветствия
   const userName = userAdd;
 
-  console.log("Hello, " + userName + "!");
+  // eslint-disable-next-line no-console
+  console.log(`Hello, ${userName}!`);
 
-  //определение функции случайного числа
+  // определение функции случайного числа
+  // eslint-disable-next-line no-unused-vars
   const randomNum = (max) => Math.floor(Math.random() * max);
 
   // определение функции игры на четность
+  // eslint-disable-next-line no-console
   console.log(essenseGame);
 
   for (let i = 0; i < 3; i += 1) {
@@ -34,6 +39,6 @@ const game = (essenseGame, task) => {
       return;
     }
   }
-  console.log("Congratulations, " + userName + "!");
+  console.log(`Congratulations, ${userName}!`);
 };
 export default game;
