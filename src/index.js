@@ -1,11 +1,9 @@
 /* eslint-disable no-console */
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 const game = (essenseGame, task) => {
   // определеие функции запроса имени
-  const userAdd = readlineSync.question(
-    "Welcome to the Brain Games! \nMay I have your name? "
-  );
+  const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
 
   // определение функци приветствия
   const userName = userAdd;
@@ -23,19 +21,17 @@ const game = (essenseGame, task) => {
 
   for (let i = 0; i < 3; i += 1) {
     const pairOfQuestionAndResult = task();
-    console.log("Question:", pairOfQuestionAndResult[0]);
-    const answerr = readlineSync.question("Your answer: ");
+    console.log('Question:', pairOfQuestionAndResult[0]);
+    const answerr = readlineSync.question('Your answer: ');
 
     // Константа для правильного ответа
     const rightAnswer = pairOfQuestionAndResult[1];
 
     // Проверка
     if (answerr === rightAnswer) {
-      console.log("Correct!");
+      console.log('Correct!');
     } else {
-      console.log(
-        `"${answerr}" is wrong answer ;(. Correct answer was "${rightAnswer}". \nLet's try again, ${userName}!`
-      );
+      console.log(`"${answerr}" is wrong answer ;(. Correct answer was "${rightAnswer}". \nLet's try again, ${userName}!`);
       return;
     }
   }

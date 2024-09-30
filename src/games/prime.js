@@ -1,13 +1,12 @@
 // eslint-disable-next-line max-len
 // eslint-disable-next-line import/no-named-as-default, import/extensions, import/no-named-as-default-member
-import game from "../index.js";
+import game from '../index.js';
 // eslint-disable-next-line max-len
 // eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
-import randomNum from "../getRandomInt.js";
+import randomNum from '../getRandomInt.js';
 
 const prime = () => {
-  const nameGame =
-    'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const nameGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const taskPrime = () => {
     const num1 = randomNum(30);
 
@@ -27,7 +26,7 @@ const prime = () => {
       }
       return true;
     };
-    const correctAnswer = gamePrime(question) ? "yes" : "no";
+    const correctAnswer = gamePrime(question) ? 'yes' : 'no';
     return [question, correctAnswer];
   };
   game(nameGame, taskPrime);

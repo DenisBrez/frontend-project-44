@@ -1,12 +1,12 @@
 // eslint-disable-next-line max-len
 // eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
-import game from "../index.js";
+import game from '../index.js';
 // eslint-disable-next-line max-len
 // eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
-import randomNum from "../getRandomInt.js";
+import randomNum from '../getRandomInt.js';
 
 const Progression = () => {
-  const nameGame = "What number is missing in the progression?";
+  const nameGame = 'What number is missing in the progression?';
 
   const getArithmeticProgression = (num1, step, prLength) => {
     const progression = [];
@@ -26,8 +26,8 @@ const Progression = () => {
     const progression = getArithmeticProgression(num1, step, prLength);
 
     const correctAnswer = String(progression[hiddenNumberIndex]);
-    progression[hiddenNumberIndex] = "..";
-    const question = progression.join(" ");
+    progression[hiddenNumberIndex] = '..';
+    const question = progression.join('');
 
     return [question, correctAnswer];
   };

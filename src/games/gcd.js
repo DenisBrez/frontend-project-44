@@ -1,12 +1,12 @@
 // eslint-disable-next-line max-len
 // eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
-import game from "../index.js";
+import game from '../index.js';
 // eslint-disable-next-line max-len
 // eslint-disable-next-line import/no-named-as-default-member, import/extensions, import/no-named-as-default
-import getRandomNumber from "../getRandomMinMax.js";
+import getRandomNumber from '../getRandomMinMax.js';
 
 const gcd = () => {
-  const nameGame = "Find the greatest common divisor of given numbers.";
+  const nameGame = 'Find the greatest common divisor of given numbers.';
   const taskGcd = () => {
     const num1 = getRandomNumber(1, 30);
     const num2 = getRandomNumber(1, 50);
