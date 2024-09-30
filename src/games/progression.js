@@ -27,7 +27,7 @@ const Progression = () => {
 
     const correctAnswer = String(progression[hiddenNumberIndex]);
     progression[hiddenNumberIndex] = '..';
-    const question = progression.join('');
+    const question = progression.join(' ');
 
     return [question, correctAnswer];
   };
