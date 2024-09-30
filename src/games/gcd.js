@@ -1,10 +1,10 @@
 import game from "../index.js";
-import randomNum from "../getRandomInt.js";
+import getRandomNumber from "../getRandomMinMax.js";
 const gcd = () => {
   const nameGame = "Find the greatest common divisor of given numbers.";
   const taskGcd = () => {
-    const num1 = randomNum(30);
-    const num2 = randomNum(50);
+    const num1 = getRandomNumber(1, 30);
+    const num2 = getRandomNumber(1, 50);
 
     //функция нахождения минимального числа.
     let Arr = [num1, num2];
