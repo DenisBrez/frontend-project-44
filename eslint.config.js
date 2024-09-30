@@ -1,4 +1,5 @@
 import globals from "globals";
+import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 
 import path from "path";
 import { fileURLToPath } from "url";
@@ -13,4 +14,5 @@ const compat = new FlatCompat({baseDirectory: __dirname, recommendedConfig: plug
 export default [
   {languageOptions: { globals: globals.browser }},
   ...compat.extends("airbnb"),
+  pluginReactConfig,
 ];

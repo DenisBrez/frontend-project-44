@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import Progression from "../games/progression.js";
+import Progression from "../src/games/progression.js";
 Progression();
