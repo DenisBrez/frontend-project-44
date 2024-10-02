@@ -5,7 +5,7 @@ const randomNum = (max) => Math.floor(Math.random() * max);
 
 // определение функции игры на четность
 // eslint-disable-next-line consistent-return
-const gameEven = () => {
+const launchGameEven = () => {
   // определеие функции запроса имени
   const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
 
@@ -14,6 +14,7 @@ const gameEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
+    // функция нахождения случайного числа
     const maxNum = randomNum(80);
 
     console.log('Question:', maxNum);
@@ -35,4 +36,4 @@ const gameEven = () => {
 
   console.log(`Congratulations, ${userAdd}!`);
 };
-export default gameEven;
+export default launchGameEven;

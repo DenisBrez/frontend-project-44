@@ -1,13 +1,12 @@
-import game from '../index.js';
+import launchGame from '../index.js';
 
 import randomNum from '../getRandomInt.js';
 
-const prime = () => {
+const launchPrime = () => {
   const nameGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const taskPrime = () => {
+    // функция нахождения случайного числа
     const num1 = randomNum(30);
-
-    // функция нахождения минимального числа.
 
     const question = `${num1}`;
 
@@ -26,6 +25,6 @@ const prime = () => {
     const correctAnswer = gamePrime(question) ? 'yes' : 'no';
     return [question, correctAnswer];
   };
-  game(nameGame, taskPrime);
+  launchGame(nameGame, taskPrime);
 };
-export default prime;
+export default launchPrime;

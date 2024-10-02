@@ -1,8 +1,8 @@
-import game from '../index.js';
+import launchGame from '../index.js';
 
 import randomNum from '../getRandomInt.js';
 
-const progression = () => {
+const launchProgression = () => {
   const nameGame = 'What number is missing in the progression?';
 
   const getArithmeticProgression = (num1, step, prLength) => {
@@ -16,9 +16,12 @@ const progression = () => {
   };
 
   const taskProgression = () => {
+    // длина прогрессии
     const prLength = 10;
+    // функция нахождения случайного числа
     const num1 = randomNum(20);
     const step = randomNum(5);
+
     const hiddenNumberIndex = randomNum(prLength);
     const progressions = getArithmeticProgression(num1, step, prLength);
 
@@ -28,6 +31,6 @@ const progression = () => {
 
     return [question, correctAnswer];
   };
-  game(nameGame, taskProgression);
+  launchGame(nameGame, taskProgression);
 };
-export default progression;
+export default launchProgression;

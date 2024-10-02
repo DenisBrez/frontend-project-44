@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const game = (essenceGame, task) => {
+const launchGame = (essenceGame, task) => {
   // определеие функции запроса имени
   const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
 
@@ -27,4 +27,4 @@ const game = (essenceGame, task) => {
   }
   console.log(`Congratulations, ${userAdd}!`);
 };
-export default game;
+export default launchGame;
