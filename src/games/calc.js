@@ -5,7 +5,6 @@ import randomNum from '../getRandomInt.js';
 const launchCalc = () => {
   const nameGame = 'What is the result of the expression?';
   const taskCalc = () => {
-
     // Функция нахождения случайного числа
     const num1 = randomNum(30);
     const num2 = randomNum(20);
