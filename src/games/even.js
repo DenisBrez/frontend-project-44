@@ -1,22 +1,18 @@
 import readlineSync from 'readline-sync';
 
-// определеие функции запроса имени
-const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
-
-// определение функци приветствия
-const userName = userAdd;
-export const greeting = () => {
-  // eslint-disable-next-line no-console
-  console.log(`Hello, ${userName}!`);
-};
-
 // определение функции случайного числа
 const randomNum = (max) => Math.floor(Math.random() * max);
 
 // определение функции игры на четность
 // eslint-disable-next-line consistent-return
-export const gameEven = () => {
-  // eslint-disable-next-line no-console
+const gameEven = () => {
+
+   // определеие функции запроса имени
+	 const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
+
+	 // eslint-disable-next-line no-console
+	 console.log(`Hello, ${userAdd}!`);
+
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
@@ -35,10 +31,11 @@ export const gameEven = () => {
     } else {
       const checking = answer === 'yes' ? 'no' : 'yes';
       // eslint-disable-next-line no-console
-      const warning = console.log(`"${answer}" is wrong answer ;(. Correct answer was '${checking}'. \nLet's try again, ${userName}!`);
+      const warning = console.log(`"${answer}" is wrong answer ;(. Correct answer was '${checking}'. \nLet's try again, ${userAdd}!`);
       return warning;
     }
   }
   // eslint-disable-next-line no-console
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userAdd}!`);
 };
+export default gameEven;

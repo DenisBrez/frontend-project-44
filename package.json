@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/DenisBrez/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DenisBrez/frontend-project-44/actions)",
   "main": "index.js",
-	"type": "module",
+  "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -39,8 +39,6 @@
     "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.9.0",
     "prettier": "3.3.3"
   },
