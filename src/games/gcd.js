@@ -1,8 +1,5 @@
-// eslint-disable-next-line max-len
-// eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
 import game from '../index.js';
-// eslint-disable-next-line max-len
-// eslint-disable-next-line import/no-named-as-default-member, import/extensions, import/no-named-as-default
+
 import getRandomNumber from '../getRandomMinMax.js';
 
 const gcd = () => {
@@ -17,6 +14,7 @@ const gcd = () => {
     const maxNum = Math.max(...Arr);
 
     const question = `${num1} ${num2}`;
+
     // eslint-disable-next-line consistent-return
     const gameGcd = () => {
       for (let j = minNum; j > 0; j -= 1) {

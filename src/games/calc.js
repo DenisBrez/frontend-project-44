@@ -1,8 +1,5 @@
-// eslint-disable-next-line max-len
-// eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
 import game from '../index.js';
-// eslint-disable-next-line max-len
-// eslint-disable-next-line import/extensions, import/no-named-as-default, import/no-named-as-default-member
+
 import randomNum from '../getRandomInt.js';
 
 const calc = () => {

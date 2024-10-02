@@ -1,15 +1,12 @@
-/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
 
 const game = (essenceGame, task) => {
   // определеие функции запроса имени
   const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
 
-  // eslint-disable-next-line no-console
   console.log(`Hello, ${userAdd}!`);
 
   // определение функции игры на четность
-  // eslint-disable-next-line no-console
   console.log(essenceGame);
 
   for (let i = 0; i < 3; i += 1) {
