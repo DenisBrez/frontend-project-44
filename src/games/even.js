@@ -6,12 +6,11 @@ const randomNum = (max) => Math.floor(Math.random() * max);
 // определение функции игры на четность
 // eslint-disable-next-line consistent-return
 const gameEven = () => {
+  // определеие функции запроса имени
+  const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
 
-   // определеие функции запроса имени
-	 const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
-
-	 // eslint-disable-next-line no-console
-	 console.log(`Hello, ${userAdd}!`);
+  // eslint-disable-next-line no-console
+  console.log(`Hello, ${userAdd}!`);
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
