@@ -6,9 +6,8 @@ const launchGame = (essenceGame, game) => {
 
   console.log(`Hello, ${userName}!`);
 
-  // определение функции игры на четность
   console.log(essenceGame);
-
+  // Пользователь должен дать правильный ответ на три вопроса подряд
   for (let i = 0; i < 3; i += 1) {
     const [question, rightAnswer] = game();
 
