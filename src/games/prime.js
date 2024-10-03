@@ -8,7 +8,7 @@ const launchPrime = () => {
     // функция нахождения случайного числа
     const num1 = randomNum(30);
 
-    const question = `${num1}`;
+    const questions = `${num1}`;
 
     const gamePrime = () => {
       if (num1 < 1) return false;
@@ -22,8 +22,8 @@ const launchPrime = () => {
       }
       return true;
     };
-    const correctAnswer = gamePrime(question) ? 'yes' : 'no';
-    return [question, correctAnswer];
+    const correctAnswer = gamePrime(questions) ? 'yes' : 'no';
+    return [questions, correctAnswer];
   };
   launchGame(nameGame, taskPrime);
 };

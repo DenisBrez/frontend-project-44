@@ -12,7 +12,6 @@ const launchGcd = () => {
 
     const question = `${num1} ${num2}`;
 
-    // eslint-disable-next-line consistent-return
     const gameGcd = () => {
       // функция нахождения минимального/максимального числа
       const minNum = Math.min(num1, num2);
@@ -23,6 +22,7 @@ const launchGcd = () => {
           return j;
         }
       }
+      return minNum;
     };
     return [question, String(gameGcd())];
   };

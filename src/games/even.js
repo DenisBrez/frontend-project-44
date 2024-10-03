@@ -1,39 +1,19 @@
-import readlineSync from 'readline-sync';
+import launchGame from '../index.js';
 
-// определение функции случайного числа
-const randomNum = (max) => Math.floor(Math.random() * max);
+import randomNum from '../getRandomInt.js';
 
-// определение функции игры на четность
-// eslint-disable-next-line consistent-return
-const launchGameEven = () => {
-  // определеие функции запроса имени
-  const userAdd = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
+const launchEven = () => {
+  const nameGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  console.log(`Hello, ${userAdd}!`);
-
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  for (let i = 0; i < 3; i += 1) {
-    // функция нахождения случайного числа
+  const checkEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
+  const taskEven = () => {
     const maxNum = randomNum(80);
 
-    console.log('Question:', maxNum);
+    const question = `${maxNum}`;
 
-    const answer = readlineSync.question('Your answer:');
-
-    const examination1 = maxNum % 2 === 0 && answer === 'yes';
-    const examination2 = maxNum % 2 !== 0 && answer === 'no';
-
-    if (examination1 === true || examination2 === true) {
-      console.log('Correct!');
-    } else {
-      const checking = answer === 'yes' ? 'no' : 'yes';
-
-      const warning = console.log(`"${answer}" is wrong answer ;(. Correct answer was '${checking}'. \nLet's try again, ${userAdd}!`);
-      return warning;
-    }
-  }
-
-  console.log(`Congratulations, ${userAdd}!`);
+    const answer = checkEven(maxNum);
+    return [question, answer];
+  };
+  launchGame(nameGame, taskEven);
 };
-export default launchGameEven;
+export default launchEven;
