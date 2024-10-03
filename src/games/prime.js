@@ -19,7 +19,7 @@ const searchPrimeNumber = (num1) => {
 const launchPrime = () => {
   const nameGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const taskPrime = () => {
-		const limitRandomNum = 30;
+    const limitRandomNum = 30;
     // функция нахождения случайного числа
     const num1 = randomNum(limitRandomNum);
 

@@ -18,8 +18,8 @@ const launchProgression = () => {
   const taskProgression = () => {
     // длина прогрессии
     const prLength = 10;
-		const limitRandomNum = 20;
-		const limitStep = 5;
+    const limitRandomNum = 20;
+    const limitStep = 5;
     // функция нахождения случайного числа
     const num1 = randomNum(limitRandomNum);
     const step = randomNum(limitStep);
