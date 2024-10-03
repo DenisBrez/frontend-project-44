@@ -4,7 +4,7 @@ import randomNum from '../getRandomInt.js';
 
 // функция нахождения простого числа
 const searchPrimeNumber = (num1) => {
-  if (num1 < 1) return false;
+  if (num1 <= 1) return false;
 
   if (num1 <= 3) return true;
 
