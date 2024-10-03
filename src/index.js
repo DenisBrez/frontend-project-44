@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const launchGame = (essenceGame, game) => {
+const launchGame = (essenceGame, openGame) => {
   // определеие функции запроса имени
   const userName = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
 
@@ -9,7 +9,7 @@ const launchGame = (essenceGame, game) => {
   console.log(essenceGame);
   // Пользователь должен дать правильный ответ на три вопроса подряд
   for (let i = 0; i < 3; i += 1) {
-    const [question, rightAnswer] = game();
+    const [question, rightAnswer] = openGame();
 
     console.log('Question:', question);
     const answer = readlineSync.question('Your answer: ');

@@ -19,9 +19,12 @@ const launchGcd = () => {
   const nameGame = 'Find the greatest common divisor of given numbers.';
 
   const taskGcd = () => {
+		const minLimitRandomNum = 1;
+		const limitRandomNum1 = 30;
+		const limitRandomNum2 = 50;
     // функция нахождения случайного числа
-    const num1 = getRandomNumber(1, 30);
-    const num2 = getRandomNumber(1, 50);
+    const num1 = getRandomNumber(minLimitRandomNum, limitRandomNum1);
+    const num2 = getRandomNumber(minLimitRandomNum, limitRandomNum2);
 
     const question = `${num1} ${num2}`;
     const gameGcd = String(searchDivider(num1, num2));

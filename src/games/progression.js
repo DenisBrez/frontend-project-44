@@ -18,9 +18,11 @@ const launchProgression = () => {
   const taskProgression = () => {
     // длина прогрессии
     const prLength = 10;
+		const limitRandomNum = 20;
+		const limitStep = 5;
     // функция нахождения случайного числа
-    const num1 = randomNum(20);
-    const step = randomNum(5);
+    const num1 = randomNum(limitRandomNum);
+    const step = randomNum(limitStep);
 
     const hiddenNumberIndex = randomNum(prLength);
     const progressions = getArithmeticProgression(num1, step, prLength);
