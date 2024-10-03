@@ -4,7 +4,7 @@ import randomNum from '../getRandomInt.js';
 
 const getArithmeticProgression = (num1, step, prLength) => {
   const progressions = [];
-// функция поиска арифметической прогресии
+  // функция поиска арифметической прогресии
   for (let i = 0; i < prLength; i += 1) {
     progressions.push(num1 + step * i);
   }
